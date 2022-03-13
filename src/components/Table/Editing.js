@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  Td, EditButton, DeleteButton, SaveButton, CancelButton
+  Td, EditButton, DeleteButton, SaveButton, CancelButton, FormInput
 } from '../../styles/styles';
 /**
  * Edit user details when neededs
@@ -13,7 +13,7 @@ export const EditData = ({
   return (
     <tr>
       <Td>
-        <input
+        <FormInput
           type="text"
           required="required"
           placeholder="Enter first name..."
@@ -23,7 +23,7 @@ export const EditData = ({
         />
       </Td>
       <Td>
-        <input
+        <FormInput
           type="text"
           required="required"
           placeholder="Enter last name..."
