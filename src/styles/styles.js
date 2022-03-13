@@ -205,3 +205,10 @@ export const FormInput = styled.input`
 	border-bottom: 1px solid #cfcfcf;
 	font-size: 1rem;
 `;
+
+export const Div = styled.div`
+width: 300px;
+padding: 10px;
+margin: 10px;
+text-align: justify;
+`;

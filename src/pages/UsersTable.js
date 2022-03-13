@@ -3,7 +3,7 @@ import { EditData, ReadData } from '../components/Table/Editing';
 import { nanoid } from "nanoid";
 
 //styles
-import { Container, Heading, Form, Table, Th, Span, AddButton, FormInput } from '../styles/styles';
+import { Container, Heading, Form, Table, Th, Span, AddButton, FormInput, Div } from '../styles/styles';
 
 //Validate User inputs by form validation
 import { validateForm, validateInput } from '../lib/validation';
@@ -210,12 +210,12 @@ const UsersTable = () => {
         />
         <AddButton type="submit">Add</AddButton>
       </Form>
-      <div>
-        {error && <Span cla>{error.firstName}</Span>}
+      <Div>
+        {error && <Span>{error.firstName}</Span>}
         {error && <Span>{error.lastName}</Span>}
         {error && <Span>{error.userId}</Span>}
         {duplicated && <Span>User already added</Span>}
-      </div>
+      </Div>
 
       <Form onSubmit={handleEditFormSubmit}>
         <Table>
